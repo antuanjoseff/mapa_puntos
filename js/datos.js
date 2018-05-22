@@ -7,14 +7,33 @@ var datosGeoJSON = {
   {
     "type": "Feature",
     "properties": {
-      "nombre": "SIGTE" //NOMBRE QUE SE MOSTRARÁ EN FORMA DE POP-UP
+      "nombre": "SIGTE", //NOMBRE QUE SE MOSTRARÁ EN FORMA DE POP-UP
+      "border-color": "#c3a3a3", //COLOR DEL BORDE
+      "fill-color": "green" //COLOR DE RELLENO
     },
-    "geometry": {
+    "geometry": { 
       "type": "Point", "coordinates": [
         2.827676362232693, 41.98521580774775
       ]
     }
   }
+  ,
+  {
+    "type": "Feature",
+    "properties": {
+      "nombre": "John Doe",
+      "border-color": "#f300a3",
+      "fill-color": "red" 
+    },
+    "geometry": { //MADRID
+        "type": "Point",
+        "coordinates": [
+          -3.751144409179687,
+          40.33573338834914
+        ]
+      }
+  }
+  
   //AQÚI DEBERÉIS AÑADIR VUESTRA UBICACIÓN PRECEDIDA DE UNA COMA
   //  ,
   // {

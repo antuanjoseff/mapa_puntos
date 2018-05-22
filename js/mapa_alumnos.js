@@ -5,18 +5,35 @@ var tileLayer = new ol.layer.Tile({
 
 //ESTILO CAPA DE PUNTOS
 var pointStyle = new ol.style.Style({
-      image: new ol.style.Circle({
-          radius: 10,
-          fill: new ol.style.Fill({
-              color: 'red'
-          }),
-          stroke: new ol.style.Stroke({
-            color: '#333',
-            width: 2
-          })
+  image: new ol.style.Circle({
+      radius: 10,
+      fill: new ol.style.Fill({
+          color: 'red'
+      }),
+      stroke: new ol.style.Stroke({
+        color: '#333',
+        width: 2
       })
+  })
 })
 
+function functionStyle(feature, resolution){
+  var fillColor = feature.get('fill-color');
+  var strokeColor = feature.get('border-color');
+  var thisStyle= new ol.style.Style({
+    image: new ol.style.Circle({
+        radius: 10,
+        fill: new ol.style.Fill({
+            color: fillColor
+        }),
+        stroke: new ol.style.Stroke({
+          color: strokeColor,
+          width: 2
+        })
+      })
+    })
+  return thisStyle;
+ }
 //CAPA DE PUNTOS
 var vectorSource = new ol.source.Vector({
     features: (new ol.format.GeoJSON({featureProjection:"EPSG:3857"})).readFeatures(datosGeoJSON)    
@@ -24,7 +41,7 @@ var vectorSource = new ol.source.Vector({
 
 var vectorPoints = new ol.layer.Vector({
     source: vectorSource,
-    style: pointStyle
+    style: functionStyle
 });
 
 //DEFINIMOS UNA INTERACCIÓN
@@ -66,7 +83,7 @@ map = new ol.Map({
   ,
   view: new ol.View({
     center: [312807, 5156486],
-    zoom: 14
+    zoom: 6
   })
   ,
   layers: [
