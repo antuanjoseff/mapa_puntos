@@ -33,7 +33,38 @@ var datosGeoJSON = {
         ]
       }
   }
-  
+  ,
+  {
+    "type": "Feature",
+    "properties": {
+      "nombre": "Jane Doe",
+      "border-color": "#f300a3",
+      "fill-color": "green" 
+    },
+    "geometry": { //MADRID
+        "type": "Point",
+        "coordinates": [
+          -0.37490844726562494,
+          39.46588451142044
+        ]
+      }
+  }
+  ,
+  {
+    "type": "Feature",
+    "properties": {
+      "nombre": "Jane Doe",
+      "border-color": "#f300a3",
+      "fill-color": "green" 
+    },
+    "geometry": { //MADRID
+        "type": "Point",
+        "coordinates": [
+          -0.391387939453125,
+          39.4637641090409
+        ]
+      }
+  }
   //AQÚI DEBERÉIS AÑADIR VUESTRA UBICACIÓN PRECEDIDA DE UNA COMA
   //  ,
   // {
