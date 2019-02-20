@@ -33,12 +33,21 @@ var datosGeoJSON = {
         ]
       }
   }
-  
-  //AQÚI DEBERÉIS AÑADIR VUESTRA UBICACIÓN PRECEDIDA DE UNA COMA
-  //  ,
-  // {
-  // ....VUESTRA UBICACIÓN AQUÍ REPLICANDO LA ESTRUCTURA DE LA UBICACIÓN
-  // DEL SIGTE
-  //}
+ ,
+  {
+    "type": "Feature",
+    "properties": {
+      "nombre": "Magí Pàmies",
+      "border-color": "#0cfd07",
+      "fill-color": "#fd6b00" 
+    },
+    "geometry": { //Les Borges del Camp
+        "type": "Point",
+        "coordinates": [
+          1.0213727,
+          41.1699419
+        ]
+      }
+  }
 ]
 }
