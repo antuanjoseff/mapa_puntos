@@ -49,5 +49,21 @@ var datosGeoJSON = {
         ]
       }
   }
+  ,
+  {
+    "type": "Feature",
+    "properties": {
+      "nombre": "Ricard Cots",
+      "border-color": "#496796",
+      "fill-color": "#4286f4" 
+    },
+    "geometry": { //Menorca 39.98821, 4.09344
+        "type": "Point",
+        "coordinates": [
+          4.09344,
+          39.98821
+        ]
+      }
+  }
 ]
 }
