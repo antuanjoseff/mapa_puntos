@@ -65,5 +65,21 @@ var datosGeoJSON = {
         ]
       }
   }
+  ,
+  {
+    "type": "Feature",
+    "properties": {
+      "nombre": "Federico Cheda",
+      "border-color": "#000000",
+      "fill-color": "#ffffff" 
+    },
+    "geometry": { //LUGO
+        "type": "Point",
+        "coordinates": [
+          -7.55602,
+          43.00992
+        ]
+      }
+  }
 ]
 }
