@@ -73,7 +73,7 @@ var datosGeoJSON = {
       "border-color": "#000000",
       "fill-color": "#ffffff" 
     },
-    "geometry": { //LUGO
+    "geometry": { //Lugo
         "type": "Point",
         "coordinates": [
           -7.55602,
